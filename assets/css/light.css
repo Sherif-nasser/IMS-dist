@@ -1,0 +1,238 @@
+/* 
+ * BreadCramb  
+ */
+.breadcrumb-item + .breadcrumb-item::before,
+.breadcrumb-item.active span {
+  color: var(--second-color);
+}
+.breadcrumb-item:not(.active) {
+  color: rgba(144, 144, 154, 0.8);
+}
+.breadcrumb-item:not(.active):hover {
+  color: rgba(144, 144, 154, 1);
+}
+
+/*
+ * Navbar
+ */
+.navbar .nav-link i {
+  color: var(--main-color);
+}
+
+header {
+  background-color: rgba(226, 226, 226, 0.8);
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  background: var(--linear) !important ;
+}
+
+.offcanvas-header button.btn:active {
+  border: none;
+}
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+.sidebar .nav-item a.nav-link {
+  color: var(--third-color);
+}
+.sidebar .nav-item a.nav-link.active {
+  color: var(--main-color);
+}
+
+/* sidebar Items */
+.btn-toggle {
+  color: var(--bs-emphasis-color);
+  background-color: transparent;
+}
+
+/* ====================== */
+/* Main */
+/* ====================== */
+
+main .title-top h1 {
+  background: var(--radial-dark);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .title-top p {
+  color: var(--third-color);
+}
+main .title-top .exportfile button {
+  background: var(--linear-3);
+  color: white;
+}
+main .title-top .back a {
+  border: 2px solid var(--second-color);
+  color: var(--second-color);
+}
+main .navs .row .col-lg-4:nth-child(1) > div {
+  background: var(--linear-blue);
+}
+main .navs .row .col-lg-4:nth-child(2) > div {
+  background: var(--linear-red);
+}
+main .navs .row .col-lg-4:nth-child(3) > div {
+  background: var(--linear-3);
+}
+main .notify {
+  background-color: #ffffff;
+}
+main .notify ul li:nth-child(even) {
+  background-color: #ececec;
+}
+main table.table tbody span {
+  color: var(--main-color);
+}
+/* Tasks */
+main table.table tbody .taskActive {
+  background-color: #c1dbff;
+  color: #0764e6;
+}
+main table.table tbody .taskPause {
+  background-color: #fff8e7;
+  color: #d5b500;
+}
+main table.table tbody .taskStop {
+  background-color: #ffe5ee;
+  color: #aa0000;
+}
+main > .container-fluid > .row > .col-12 > .card {
+  box-shadow: 0px 5px 10px 5px rgba(88, 88, 88, 0.1);
+}
+/* Listing Pages */
+main .list-row .addNew a {
+  background: var(--linear-blue);
+  color: white;
+}
+main .list-row .searchINP input {
+  border-color: var(--third-color);
+}
+main .list-row .filterBTN .btn {
+  border-color: var(--second-color);
+  color: var(--second-color);
+}
+
+main .list-row table.table tr {
+  border-color: var(--second-color);
+}
+main .list-row table.table tr > * {
+  color: var(--second-color);
+}
+main .list-row .action a.showAll {
+  background: transparent;
+  color: var(--second-color);
+  border-color: var(--second-color);
+}
+main .list-row .action a.get {
+  background: var(--linear-blue);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+main .action a.edit {
+  background: var(--linear-dark);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+main .action button.delete {
+  background: var(--linear-danger);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+main .action a.btn,
+main .action button.btn {
+  color: white;
+}
+main .list-row .pagination li a {
+  background: var(--linear-blue);
+  color: white;
+  border: 2px solid white;
+}
+main .list-row .pagination li:first-child a,
+main .list-row .pagination li:last-child a {
+  background: none;
+  color: black;
+}
+main .list-row .pagination li a.active {
+  background-color: white;
+  border: 2px solid var(--main-color);
+  background: none;
+  color: var(--main-color);
+}
+main .list-row select {
+  background: var(--linear-blue);
+  color: white;
+}
+main .list-row select option {
+  color: black;
+}
+/* adding Pages */
+main .add-row .card .card-body {
+  color: var(--second-color);
+}
+main .add-row .card .card-body input,
+main .add-row .card .card-body select,
+main .add-row .card .card-body textarea {
+  border-color: var(--main-color);
+  color: var(--second-color);
+}
+main .add-row .card .card-body .input-group-text {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+main .add-row .card .card-body input[type="radio"] + label {
+  border: 2px solid var(--main-color);
+}
+main .add-row .card .card-body input[type="radio"]:checked + label {
+  background: var(--radial-dark);
+  color: white;
+}
+
+main .add-row .card .card-body h2.card-title,
+main .add-row .card .card-body h4.card-title,
+main .add-row .card .card-body p.card-text,
+main .add-row .card .card-body ul.heads-inner {
+  color: var(--main-color);
+}
+main .add-row .card .card-body .documentPreview span {
+  border: 2px solid var(--main-color);
+}
+main .add-row .card .card-body ul.depDescription {
+  border: 2px solid var(--main-color);
+}
+
+.border-b {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+}
+main .add-row .card .card-body ul.nav-pills li button.nav-link {
+  color: var(--second-color);
+}
+main .add-row .card .card-body ul.nav-pills li button.nav-link.active {
+  color: var(--main-color);
+  background-color: transparent;
+  font-weight: bold;
+}
+/* Notification */
+#notification .card .notification-item:nth-child(even) {
+  background-color: #ececec;
+}
+#notification .card .notification-item .card {
+  background-color: transparent;
+}
+
+#notification .card .notification-item .card .card-title {
+  color: var(--radial-dark);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#notification .card .notification-item .card .card-text {
+  color: var(--second-color);
+}
+#notification .card .notification-item .card i {
+  color: var(--third-color);
+}

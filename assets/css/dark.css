@@ -1,0 +1,304 @@
+body {
+  background: var(--radial-dark);
+}
+
+/* 
+ * BreadCramb  
+ */
+
+.breadcrumb-item + .breadcrumb-item::before,
+.breadcrumb-item.active span {
+  color: white;
+}
+.breadcrumb-item:not(.active) {
+  color: rgba(255, 255, 255, 0.5);
+}
+.breadcrumb-item:not(.active):hover {
+  color: white;
+}
+
+/*
+ * Navbar
+ */
+.navbar .nav-link i {
+  color: var(--main-color);
+}
+
+header {
+  background-color: rgba(23, 21, 58, 0.7);
+}
+.card {
+  background-color: transparent;
+}
+/*
+  * Sidebar
+  */
+.sidebar {
+  background: var(--linear-dark) !important;
+}
+.offcanvas-md {
+  background: linear-gradient(
+    180deg,
+    rgba(38, 34, 80, 1) 0%,
+    rgba(27, 25, 66, 1) 57%,
+    rgba(23, 22, 59, 1) 100%
+  );
+}
+.offcanvas-header button.btn {
+  color: white;
+}
+.offcanvas-header button.btn:active {
+  color: white;
+  border: none;
+}
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+.sidebar .nav-item a.nav-link {
+  color: var(--third-color);
+}
+.sidebar .nav-item a.nav-link.active {
+  color: var(--main-color);
+}
+
+/* sidebar Items */
+.btn-toggle {
+  color: var(--bs-emphasis-color);
+  background-color: transparent;
+}
+
+/* ====================== */
+/* Main */
+/* ====================== */
+
+main .title-top h1 {
+  color: white;
+}
+main .title-top p {
+  color: var(--third-color);
+}
+
+main .title-top .exportfile button {
+  background: var(--linear-3);
+  background-size: 200% 200%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: white;
+}
+main .title-top .exportfile p small {
+  font-size: 10px;
+  color: white;
+}
+main .title-top .back a {
+  background: var(--linear-dark2);
+  color: white;
+}
+main .navs .row .col-lg-4:nth-child(1) > div {
+  background: var(--linear-blue);
+}
+main .navs .row .col-lg-4:nth-child(2) > div {
+  background: var(--linear-red);
+}
+main .navs .row .col-lg-4:nth-child(3) > div {
+  background: var(--linear-3);
+}
+
+main .notify > .card {
+  background-color: rgba(38, 35, 83, 0.7);
+  border: 1px solid var(--third-color);
+}
+main .notify > .card > .card-body > p {
+  color: #b1afcd;
+}
+main .notify ul li .card {
+  color: white;
+}
+main .notify ul li:nth-child(even) {
+  background-color: rgba(18, 16, 48, 0.5);
+}
+main table.table tbody span {
+  color: var(--main-color);
+}
+main .overview {
+  color: white;
+}
+main .overview,
+main .overview table.table tr {
+  border-color: var(--third-color);
+}
+main .overview table tr > * {
+  color: white;
+}
+main .overview a.btn {
+  color: var(--third-color);
+  border-color: var(--third-color) !important;
+}
+
+main > .container-fluid > .row > .col-12 > .card {
+  box-shadow: 0px 5px 10px 5px rgba(88, 88, 88, 0.1);
+}
+/* Listing Pages */
+main .list-row > div > .card {
+  border-color: var(--third-color);
+}
+main .list-row .addNew a {
+  background: var(--linear-blue);
+  color: white;
+}
+main .list-row .searchINP input {
+  border-color: var(--third-color);
+  background-color: transparent;
+  color: white;
+}
+main .list-row .searchINP input::placeholder {
+  color: var(--third-color);
+}
+main .list-row .filterBTN .btn {
+  border-color: var(--third-color);
+  color: var(--third-color);
+}
+
+main .list-row table.table tr {
+  border-color: var(--third-color);
+}
+main .list-row table.table tr > * {
+  color: white;
+}
+main .list-row .action a.showAll {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+main .list-row .action a.get {
+  background: var(--linear-blue);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+main .action a.edit {
+  background: var(--linear-dark2);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+main .action button.delete {
+  background: var(--linear-danger);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+main .action a.btn,
+main .action button.btn {
+  color: white;
+}
+main .list-row .pagination li a {
+  background: var(--third-color);
+  color: white;
+  border: 2px solid var(--third-color);
+}
+main .list-row .pagination li:first-child a,
+main .list-row .pagination li:last-child a {
+  background: none;
+  color: white;
+}
+main .list-row .pagination li a.active {
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  background: none;
+  color: var(--main-color);
+}
+main .list-row .col-md-4 button,
+main .list-row .col-md-4 p {
+  color: white;
+}
+
+main .list-row select {
+  background: var(--third-color);
+  color: white;
+}
+main .list-row select option {
+  color: white;
+}
+
+main .list-row .col-lg-6 .card {
+  border-color: var(--third-color);
+  background-color: #2c285a;
+}
+main .list-row .col-lg-6 .card h5 {
+  color: white;
+}
+main .list-row .col-lg-6 .card p {
+  color: #a2a1a8;
+}
+main .list-row .card .card-body ul.details {
+  color: white;
+}
+/* adding Pages */
+main .add-row .card {
+  border-color: var(--third-color);
+}
+main .add-row .card .card-body {
+  color: white;
+}
+main .add-row .card .card-body input,
+main .add-row .card .card-body select,
+main .add-row .card .card-body textarea {
+  color: white;
+  background-color: var(--second-color);
+  border-color: var(--second-color);
+}
+main .add-row .card .card-body input::placeholder,
+main .add-row .card .card-body select::placeholder,
+main .add-row .card .card-body textarea::placeholder {
+  color: white;
+}
+main .add-row .card .card-body .input-group-text {
+  background-color: var(--radial-dark);
+  color: var(--white);
+  border-color: var(--second-color);
+}
+main .add-row .card .card-body input[type="radio"] + label {
+  background-color: var(--second-color);
+}
+main .add-row .card .card-body input[type="radio"]:checked + label {
+  background: var(--linear-red);
+  color: white;
+}
+main .add-row .card .card-body .form-group button + a.btn {
+  color: white;
+}
+main .add-row .card .card-body h2.card-title,
+main .add-row .card .card-body h4.card-title,
+main .add-row .card .card-body p.card-text,
+main .add-row .card .card-body ul.heads-inner {
+  color: var(--main-color);
+}
+main .add-row .card .card-body .documentPreview span {
+  border: 2px solid var(--main-color);
+}
+main .add-row .card .card-body ul.depDescription {
+  background-color: var(--second-color);
+}
+.border-b {
+  border-bottom: 1px solid var(--third-color);
+}
+main .add-row .card .card-body ul.nav-pills li button.nav-link {
+  color: var(--third-color);
+}
+main .add-row .card .card-body ul.nav-pills li button.nav-link.active {
+  color: var(--main-color);
+  background-color: transparent;
+}
+/* Notification */
+#notification > .col-12 > .card {
+  border-color: var(--third-color);
+  background-color: rgba(38, 35, 83, 0.7);
+  color: #b1afcd;
+}
+#notification .card {
+  color: white;
+}
+#notification .card .notification-item:nth-child(even) {
+  background-color: rgba(18, 16, 48, 0.5);
+}
+
+#notification .card .notification-item .card i {
+  color: var(--third-color);
+}

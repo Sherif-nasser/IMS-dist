@@ -1,0 +1,970 @@
+* {
+  font-family: "Cairo";
+}
+:root {
+  --color-dark-grey: #9a9ea6;
+  --grey700: #2d3748;
+  --grey400: #a0aec0;
+  --grey200: #e2e8f0;
+  --dashboard1: #115a8b;
+  --dashboard2: #3182ce;
+  --main-linear: linear-gradient(to bottom, #3182ce, #63b3ed);
+  /* Colors */
+  --dark-one: #131517;
+  --dark-two: #1e1f25;
+  --main: #0b529e;
+  --stroke-color2: #bfd8ff;
+  --blue: #1d9bf0;
+  --blue-dark: #00509d;
+  --info: #d2d4d8;
+  --info1: #d4e8e8;
+  --info2: #c4c4c4;
+  --info3: #cecece;
+  --info4: #3d3d3d;
+  --danger: #ce3131;
+  --primary: #007dfc;
+  --primary1: #4684af;
+  --linear: linear-gradient(
+    180deg,
+    rgba(122, 98, 228, 1) 0%,
+    rgba(101, 110, 228, 1) 100%
+  );
+  --border-radius1: 20px;
+  --box-shadow1: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+  --box-shadow2: 0px 5px 14px 0px rgba(0, 0, 0, 0.173);
+  --linear: linear-gradient(
+    180deg,
+    rgba(226, 226, 226, 0.05) 0%,
+    rgba(214, 214, 214, 0.15) 57%,
+    rgba(144, 144, 154, 0.2) 100%
+  );
+  --linear-blue: linear-gradient(
+    135deg,
+    rgba(64, 221, 255, 1) 0%,
+    rgba(20, 186, 227, 1) 19%,
+    rgba(19, 177, 230, 1) 69%,
+    rgba(17, 170, 223, 1) 82%,
+    rgba(11, 152, 197, 1) 100%
+  );
+  --linear-success: linear-gradient(
+    90deg,
+    rgba(51, 228, 143, 1) 0%,
+    rgba(55, 193, 127, 1) 100%
+  );
+  --linear-red: linear-gradient(
+    180deg,
+    rgba(255, 64, 154, 1) 0%,
+    rgba(196, 56, 239, 1) 100%
+  );
+  --radial-dark: radial-gradient(
+    circle,
+    rgba(32, 29, 71, 1) 0%,
+    rgba(23, 21, 58, 1) 100%
+  );
+  --linear-dark: linear-gradient(
+    180deg,
+    rgba(38, 34, 80, 0.65) 0%,
+    rgba(27, 25, 66, 0.85) 57%,
+    rgba(23, 22, 59, 1) 100%
+  );
+  --linear-dark2: linear-gradient(
+    180deg,
+    rgba(91, 90, 153, 1) 0%,
+    rgba(56, 56, 92, 1) 100%
+  );
+  --linear-danger: linear-gradient(
+    180deg,
+    rgba(255, 64, 64, 1) 0%,
+    rgba(168, 43, 43, 1) 100%
+  );
+  --main-color: #53b9ea;
+  --second-color: #2c285a;
+  --third-color: #5b5a99;
+  --linear-3: linear-gradient(
+    45deg,
+    rgba(69, 175, 238, 0.7) 0%,
+    rgba(67, 177, 236, 0.75) 4%,
+    rgba(65, 179, 233, 0.8) 8%,
+    rgba(62, 183, 229, 1) 15%,
+    rgba(35, 219, 189, 1) 75%,
+    rgba(30, 224, 183, 0.85) 84%,
+    rgba(28, 228, 179, 0.8) 90%,
+    rgba(27, 229, 177, 0.75) 93%,
+    rgba(23, 234, 172, 0.7) 100%
+  );
+}
+/* General */
+form:focus-visible {
+  outline: none;
+}
+body {
+  background-color: #f7fafc;
+}
+/* End of General */
+/*-------------------------------
+# Header
+-------------------------------*/
+header {
+  background-color: var(--dashboard2);
+}
+header #humbergerMenu {
+  color: white;
+}
+header #humbergerMenu:hover {
+  cursor: pointer;
+}
+/* ======= */
+
+#Hero .notifyCenter {
+  transform: translate(0px, 30px) !important;
+}
+#Hero .notifyCenter li,
+#Hero .profileMenu li {
+  border-bottom: 2px solid var(--blue);
+}
+#Hero .profileMenu li.exclude {
+  border-bottom-width: 6px;
+}
+#Hero .profileMenu.dropdown-menu {
+  min-width: 15rem;
+}
+/* ======= */
+/* main #Hero {
+  background: url(../../assets/images/newsDashboard.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-height: 300px;
+} */
+#sidebarToggle {
+  position: relative;
+}
+/* main #Hero #sidebar {
+  width: 100%;
+  margin-left: -20px;
+  border-radius: 12px;
+  background-color: var(--light-one);
+  box-shadow: var(--box-shadow1);
+  border-radius: var(--border-radius1);
+  background-color: white;
+} */
+/* main #Hero #sidebar .card {
+  border-radius: none;
+} */
+/* main #Hero #sidebar li.nav-item .nav-link {
+  color: var(--grey700);
+} */
+/* main #Hero #sidebar li.nav-item i {
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--dashboard2);
+} */
+/* main #Hero #sidebar li.nav-item .nav-link.active {
+  box-shadow: var(--box-shadow1);
+  color: white;
+  border-radius: 10px;
+  background-color: var(--dashboard2);
+} */
+/* main #Hero #sidebar li.nav-item .nav-link.active i {
+  color: white;
+} */
+/* main #Hero nav .breadcrumb .breadcrumb-item,
+main #Hero nav .breadcrumb .breadcrumb-item a,
+main #Hero nav:has(ol.breadcrumb) + p,
+main #Hero nav .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--dark-one);
+} */
+/* =============================== */
+main #Hero .chart {
+  background-color: white;
+  direction: ltr;
+}
+main #Hero .charts > div > div {
+  box-shadow: var(--box-shadow1);
+  border-radius: var(--border-radius1);
+}
+main #Hero .dashboard-top .minicard .card {
+  box-shadow: var(--box-shadow2);
+  min-height: 140px;
+}
+main #Hero .dashboard-top .minicard .card h5 {
+  color: var(--grey700);
+}
+main #Hero .dashboard-top .minicard h3 .fa-address-card {
+  color: var(--dashboard2);
+  background-color: var(--stroke-color2);
+}
+main #Hero .dashboard-top .minicard h3 .fa-newspaper {
+  background-image: var(--linear-success);
+  color: white;
+}
+main #Hero .dashboard-top .minicard h3 .fa-tv {
+  background-color: var(--danger);
+  color: white;
+}
+main #Hero .dashboard-top .minicard h3 .fa-comment-dots {
+  background-color: var(--blue-dark);
+  color: var(--stroke-color2);
+}
+main #Hero .dashboard-top .minicard .card a.btn {
+  background-color: var(--dashboard2);
+  color: white;
+}
+/* =============================== */
+main #Hero form:not(.d-inline-block) .input-group button {
+  background-color: white;
+}
+main #Hero form:not(.d-inline-block) .input-group input,
+main #Hero form:not(.d-inline-block) .input-group input:focus-visible,
+main #Hero form:not(.d-inline-block) .input-group input:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+main #Hero .miniNav ul {
+  background-color: white;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow1);
+}
+main #Hero .miniNav ul li.nav-item button.nav-link {
+  color: var(--dashboard2);
+}
+main #Hero .miniNav ul li.nav-item button.active {
+  background-color: var(--dashboard2);
+  color: white;
+}
+main #Hero .tabs .tab-content {
+  background-color: white;
+  box-shadow: var(--box-shadow1);
+  color: var(--main);
+  /* border-radius: 20px; */
+}
+
+main #Hero .tabs .tab-content form .input-group {
+  border: 1px solid var(--main);
+  border-radius: 8px;
+}
+main #Hero .tabs .tab-content select:focus,
+main #Hero .tabs .tab-content select:focus-visible,
+main #Hero .tabs .tab-content .form-control:focus,
+main #Hero .tabs .tab-content .form-control:focus-visible {
+  box-shadow: none;
+  outline: none;
+}
+main #Hero .tabs .tab-content textarea::-webkit-scrollbar {
+  width: 8px;
+  padding: 3px;
+}
+main #Hero .tabs .tab-content textarea::-webkit-scrollbar-track {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 20px;
+  background-color: #3182ce8c;
+}
+main #Hero .tabs .tab-content textarea::-webkit-scrollbar-thumb {
+  background: #115a8b;
+  border-radius: 20px;
+}
+/* main #Hero .tabs .tab-content select {
+  border-color: var(--dashboard2);
+  color: var(--dashboard1);
+  background-image: url(../../assets/images/chevron-Down.svg);
+  background-size: 30px 100%;
+  background-position: left 0px;
+} */
+/* main #Hero .tabs .tab-content .form-control {
+  border-color: var(--dashboard2);
+  color: var(--dashboard1);
+  border-radius: 10px;
+} */
+main #Hero .tabs .tab-content input[type="date"].form-control {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+main #Hero .tabs .tab-content #listMeets .card,
+main #Hero .tabs .tab-content #listReels .card,
+main #Hero .tabs .tab-content #listEmployees .card,
+main #Hero .tabs .tab-content #listAdmins .card,
+main #Hero .tabs .tab-content #listArticles .card,
+main #Hero .tabs .tab-content #listCategory .card,
+main #Hero .tabs .tab-content #listInistitutes .card,
+main #Hero .tabs .tab-content #listComplaints .card {
+  box-shadow: var(--box-shadow2);
+  border-radius: 10px;
+}
+main #Hero .tabs .tab-content #listMeets .card p.card-text > span.border,
+main #Hero .tabs .tab-content #listComplaints .card p.card-text > span.border {
+  border-color: var(--dashboard2) !important;
+  border-radius: 10px;
+}
+main #Hero .tabs .tab-content .card .card-body {
+  /* color: var(--dashboard1); */
+}
+main #Hero .tabs .tab-content .card-body .edit {
+  background-color: var(--dashboard2);
+  color: white;
+}
+main #Hero .tabs .tab-content .card-body .delete {
+  background-color: var(--danger);
+  color: white;
+}
+main #Hero .tabs .tab-content .card-body .back {
+  border: 1px solid var(--main);
+  border-radius: 10px;
+  color: var(--main);
+}
+main #Hero .tabs .tab-content input[type="radio"] + label {
+  border: 1px solid var(--main);
+  color: var(--main);
+  border-radius: 10px;
+}
+main #Hero .tabs .tab-content input[type="radio"] + label:hover {
+  cursor: pointer;
+}
+
+main #Hero .tabs .tab-content input[type="radio"]:checked + label {
+  background-color: var(--main);
+  color: white;
+}
+
+main #Hero .tabs .tab-content .input-group .input-group-text {
+  background-color: var(--main);
+  color: white;
+  border: none;
+}
+main #Hero .tabs .tab-content .input-group-vertical {
+  border: 1px solid var(--main);
+  border-radius: 10px;
+}
+/* main
+  #Hero
+  .tabs
+  .tab-content
+  form
+  .input-group-vertical
+  input[type="file"]
+  + .input-group-text {
+  color: var(--dashboard1);
+  background-color: transparent;
+  border: none;
+} */
+main
+  #Hero
+  .tabs
+  .tab-content
+  form
+  .input-group-vertical
+  input[type="file"]
+  + .input-group-text:hover {
+  cursor: pointer;
+}
+main #Hero .tabs .tab-content .addArticleAttachment button {
+  background-color: var(--dashboard2);
+  color: white;
+}
+main #Hero .tabs .tab-content form button[type="submit"] {
+  background-color: var(--main);
+  color: white;
+}
+
+/* main
+  #Hero
+  .tabs
+  .tab-content
+  #addCategory
+  form
+  input[type="file"]
+  + label:not(.d-inline-block) {
+  border: 1px solid var(--dashboard2);
+  color: var(--dashboard1);
+  width: 100%;
+  border-radius: 10px;
+} */
+main
+  #Hero
+  .tabs
+  .tab-content
+  #addCategory
+  form
+  input[type="file"]
+  + label:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+main #Hero .tabs .tab-content .attatchmentFiles .d-flex {
+  background-color: var(--dashboard2);
+  color: white;
+  border-radius: 10px;
+}
+main #Hero .tabs .tab-content .attatchmentFiles button {
+  background-color: white;
+  color: var(--dashboard2);
+}
+main #Hero .tabs .tab-content ul.pagination li:first-child a.page-link,
+main #Hero .tabs .tab-content ul.pagination li:last-child a.page-link,
+main #Hero .tabs .tab-content ul.pagination a.page-link {
+  border-color: var(--stroke-color2);
+  border-radius: 0;
+  color: black;
+}
+
+main #Hero .tabs .tab-content ul.pagination li.active a.page-link {
+  background-color: var(--dashboard2) !important;
+  color: white;
+  border-color: var(--dashboard2);
+}
+/*-------------------------------
+# Login
+-------------------------------*/
+main #access .col-lg-5 {
+  background-image: url(../../assets/images/Group.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+main #access .container-fluid > .row > div {
+  min-height: 100vh;
+}
+main #access .col-lg-5 p {
+  color: white;
+}
+main #access .m-auto {
+  color: var(--dashboard1);
+}
+main #access form .form-control::placeholder {
+  color: var(--stroke-color2);
+}
+main #access form .form-control,
+main #access form .form-check-input {
+  border-color: var(--stroke-color2);
+  color: var(--dashboard1);
+}
+main #access form .form-check-input:checked {
+  background-image: var(--main-linear);
+}
+main #access form .form-control:focus,
+main #access form .form-check-input:focus,
+main #access form .form-control:focus-visible,
+main #access form .form-check-input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+main #access form button {
+  background: var(--main-linear);
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  color: white;
+}
+/* ===== Media Query ===== */
+@media (max-width: 992px) {
+  main #Hero #sidebarToggle {
+    position: absolute;
+    z-index: 213121321;
+    right: 0;
+  }
+
+  /* CSS animation */
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeEffect 0.5s;
+  }
+}
+@media (max-width: 767px) {
+  main #access .container-fluid > .row > div {
+    min-height: 50vh;
+  }
+}
+
+/* ============= GENERAL =============== */
+
+/*
+ * BreadCramb
+ */
+/* .breadcrumb-item + .breadcrumb-item::before {
+  font-family: FontAwesome;
+  content: "\f053";
+}
+
+.breadcrumb-item.active span {
+  color: var(--second-color);
+}
+
+.breadcrumb-item:not(.active) {
+  transition: color 0.4s;
+} */
+
+/*
+ * Navbar
+ */
+/*
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+} */
+
+/*
+ * Sidebar
+ */
+/*
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+
+  .navbar-search {
+    display: block;
+  }
+} */
+
+/* .sidebar {
+  position: fixed;
+  top: 0;
+}
+.sidebar .card {
+  height: 100vh;
+} */
+/*
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+}
+
+.sidebar .nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+}
+
+.sidebar .nav-item a.nav-link {
+  font-size: 16px;
+} */
+
+/* sidebar Items */
+
+.btn-toggle {
+  /* padding: 0.25rem 0.5rem; */
+  /* font-weight: 600; */
+}
+/*
+.nav-link:hover,
+.nav-link:focus {
+  cursor: pointer;
+}
+
+.btn-toggle::after {
+  font-family: FontAwesome;
+  width: 1.25em;
+  line-height: 0;
+  content: "\f078";
+  font-size: 14px;
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle-top::after {
+  font-family: FontAwesome;
+  width: 1.25em;
+  line-height: 0;
+  content: "\f077";
+  font-size: 14px;
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"]::after,
+.btn-toggle-top[aria-expanded="true"]::after {
+  transform: rotate(-180deg) translateX(-25%);
+}
+
+.btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+} */
+
+/* ====================== */
+/* Main */
+/* ====================== */
+/* main .title-top .addDep button,
+main .title-top .addDep a {
+  background: var(--linear-blue);
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+main .title-top .exportfile button {
+  background-size: 200% 200%;
+  background-position: top right;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-repeat: no-repeat;
+}
+
+main .title-top .exportfile p small {
+  font-size: 10px;
+}
+
+main .title-top .back a {
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+main .navs .row .col-lg-4 > div {
+  color: white;
+  background-size: 100% 100%;
+}
+main .navs .row .col-lg-4:nth-child(1) > div {
+  background: var(--linear-blue);
+}
+
+main .navs .row .col-lg-4:nth-child(2) > div {
+  background: var(--linear-red);
+}
+
+main .navs .row .col-lg-4:nth-child(3) > div {
+  background: var(--linear-3);
+}
+
+main table.table tr td {
+  vertical-align: middle;
+}
+
+main table.table tr > * {
+  background-color: transparent;
+} */
+
+/* Tasks */
+/* main table.table tbody .taskActive {
+  background-color: #c1dbff;
+  color: #0764e6;
+  border-radius: 6px;
+  padding: 8px 24px;
+}
+
+main table.table tbody .taskPause {
+  background-color: #fff8e7;
+  color: #d5b500;
+  border-radius: 6px;
+  padding: 8px 24px;
+}
+
+main table.table tbody .taskStop {
+  border-radius: 6px;
+  padding: 8px 24px;
+  background-color: #ffe5ee;
+  color: #aa0000;
+} */
+
+/* Listing Pages */
+/* main .list-row .addNew a {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main .list-row .searchINP input {
+  border-radius: 10px;
+}
+
+main .list-row .filterBTN .btn {
+  border-radius: 10px;
+}
+
+main .action a.btn,
+main .action button.btn {
+  color: white;
+}
+
+main .list-row .pagination li a {
+  border: none;
+  border-radius: 6px;
+}
+
+main .list-row .pagination li:first-child a,
+main .list-row .pagination li:last-child a {
+  border: none;
+}
+
+main .list-row .pagination .page-link:focus,
+main .list-row .pagination .page-link:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+main .list-row select {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+main .list-row select:focus-visible {
+  outline: none;
+} */
+
+/* adding Pages */
+/*
+main .add-row .card .card-body input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+main
+  .add-row
+  .card
+  .card-body
+  label.input-group-text:has(+ input[type="file"]):hover {
+  cursor: pointer;
+}
+
+main .add-row .card .card-body input,
+main .add-row .card .card-body select,
+main .add-row .card .card-body textarea {
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+main .add-row .card .card-body input:focus,
+main .add-row .card .card-body input:focus-visible,
+main .add-row .card .card-body textarea:focus,
+main .add-row .card .card-body textarea:focus-visible,
+main .add-row .card .card-body select:focus,
+main .add-row .card .card-body select:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+main .add-row .card .card-body input[type="radio"] + label {
+  border-radius: 12px;
+  padding: 8px 32px;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+
+main .add-row .card .card-body input[type="radio"] + label:hover {
+  cursor: pointer;
+}
+
+main .add-row .card .card-body .form-group button {
+  background: var(--linear-blue);
+  color: white;
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 10px;
+} */
+
+main .add-row .card .card-body .form-group button + a.btn {
+  /* border-color: var(--main-color); */
+  /* border-width: 2px; */
+  /* border-radius: 10px;
+  padding: 7px 64px; */
+}
+/*
+main
+  .add-row
+  .card
+  .card-body
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 35%;
+}
+
+main .add-row .action a.btn,
+main .add-row .action button.btn {
+  border-radius: 10px;
+}
+
+main .add-row .card .card-body .documentPreview span {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .add-row .card .card-body .documentPreview img {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+} */
+
+main .add-row .card .card-body ul.depDescription {
+  /* padding: 18px 16px; */
+  /* padding-bottom: 5px; */
+  /* border-radius: 8px; */
+}
+
+/* main .add-row .card .card-body ul.depDescription li {
+  margin-right: 20px;
+}
+
+main .add-row .card .card-body ul.depDescription li:has(> input) {
+  margin-right: 5px;
+  list-style-type: none;
+  width: 100%;
+}
+
+main .add-row .card .card-body ul li input {
+  line-height: 2;
+  width: 100%;
+  border: none;
+}
+
+main .add-row .card .card-body ul input:focus,
+main .add-row .card .card-body ul input:focus-visible {
+  box-shadow: none;
+  outline: none;
+} */
+
+/* Notification */
+/* #notification .card .notification-item .card .card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} */
+
+/* Login */
+/* #login {
+  color: var(--second-color);
+}
+
+#login form .form-group input {
+  border-color: var(--main-color);
+  color: var(--second-color);
+}
+
+#login form .form-group input:not([type="checkbox"]) {
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(158, 158, 158, 0.5);
+}
+
+#login form .form-group button {
+  background-position: top right;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background: var(--linear-blue);
+  color: white;
+} */
+
+/* ======================= */
+/* dark/light theme */
+/* ======================= */
+/* div.btn-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+div.btn-container label {
+  font-size: 13px;
+  color: white;
+  font-weight: 100;
+}
+
+.btn-color-mode-switch {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner {
+  margin: 0px;
+  width: 170px;
+  height: 50px;
+  background: #050036;
+  border: 1px solid var(--third-color);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:hover {
+  cursor: pointer;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+  font-family: FontAwesome;
+  content: "\f186  Dark";
+  position: absolute;
+  font-size: 12px;
+  font-weight: 100;
+  top: 7px;
+  right: 20px;
+  padding: 20px 0px;
+  transform: translateY(-20%);
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+  font-family: FontAwesome;
+  content: "\f185  Light";
+  font-size: 12px;
+  width: 85px;
+  background: #53b9ea;
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 20px 0px;
+  transform: translateY(-5%);
+}
+
+.btn-color-mode-switch input[type="checkbox"] {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0px;
+}
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner {
+  background: #050036;
+  color: #fff;
+}
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner:after {
+  content: "\f186  Dark";
+  font-size: 12px;
+  left: 85px;
+  background: #53b9ea;
+}
+
+.btn-color-mode-switch
+  input[type="checkbox"]:checked
+  + label.btn-color-mode-switch-inner:before {
+  content: "\f185  Light";
+  font-size: 12px;
+  right: auto;
+  left: 10px;
+} */
